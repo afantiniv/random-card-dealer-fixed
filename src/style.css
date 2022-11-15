@@ -1,1 +1,118 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #0e7e12;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta {
+  display: grid;
+  grid-template-rows: 50px auto 50px;
+  background-color: #ffffff;
+  width: 420px;
+  height: 620px;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.carta-icon-header {
+  text-align: left;
+  font-size: 135px;
+  line-height: 100px;
+}
+
+.carta-val {
+  margin: auto;
+  text-align: center;
+  font-size: 220px;
+  font-weight: bold;
+}
+
+.carta-icon-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 135px;
+  line-height: 100px;
+  text-align: right;
+}
+
+.espadas .a-carta-val::after {
+  content: "\2660";
+}
+
+.trebol .a-carta-val::after {
+  content: "\2663";
+}
+
+.diamantes .a-carta-val::after {
+  content: "\2666";
+}
+
+.corazon .a-carta-val::after {
+  content: "\2665";
+  color: red;
+}
+
+.espadas .carta-icon-header::after,
+.espadas .carta-icon-footer::after {
+  content: "\2660";
+  transform: rotate(180deg);
+}
+
+.diamantes .carta-icon-header::after,
+.diamantes .carta-icon-footer::after {
+  content: "\2666";
+  transform: rotate(180deg);
+}
+
+.trebol .carta-icon-header::after,
+.trebol .carta-icon-footer::after {
+  content: "\2663";
+  transform: rotate(180deg);
+}
+
+.corazon .carta-icon-header::after,
+.corazon .carta-icon-footer::after {
+  content: "\2665";
+  color: red;
+  transform: rotate(180deg);
+}
+
+.a-carta-val {
+  margin: auto;
+  text-align: center;
+  font-size: 220px;
+  font-weight: bold;
+}
+
+.a-carta-header {
+  line-height: 70px;
+  text-align: left;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.a-carta-footer {
+  display: flex;
+
+  line-height: 70px;
+  text-align: right;
+  font-size: 100px;
+  font-weight: bold;
+  transform: rotate(180deg);
+}
+
+#ajustes {
+  margin-top: 20px;
+}
